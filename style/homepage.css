@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+.header h1{
+  background-color: #FFFFFF;
+  padding: auto;
+  text-align: left;
+}
+
+.header h2{
+  text-align: right;
+}
+
+#mySearch {
+  width: 20%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  color: #310049;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #310049;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #D197E1;
+  color: white;
+}
+
+.slideshow-container {
+  max-height: 1000px;
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#maincage{
+	width: 1200px;
+	margin:auto;
+}
+
+
+.cavingimage{
+	padding: 5px 5px 2px 2px;
+	max-width: 600px;
+	float:left;
+}
+
+.mountainbikingimage, .skytreximage, .hikingimage, .flyboardimage{
+	padding: 5px 5px 2px 2px;
+	max-width: 600px;
+	clear:both;
+	float:left;
+}
+
+.rockclimbimage{
+	padding: 5px 5px 2px 2px;
+	max-width: 700px;
+	clear:both;
+	float:left;
+}
+
+.cavingparagraph, .rockclimbparagraph, .mountainbikingparagraph, .skytrexparagraph, .hikingparagraph, .flyboardparagraph{
+	font-family:arial, sans-serif;
+	padding: 0px 5px 2px 2px;
+	max-width:600px;
+	height:300px;
+	float:right;
+}
+
+#footer{
+	clear:both;
+	padding:30px;
+	text-align:right;
+	background-color: #310049;
+	color: white;
