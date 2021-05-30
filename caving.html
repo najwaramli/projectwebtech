@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Caving</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/sport.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1><a href="homepage.html"><img src="images/logo.png" alt="home" style="width:700px;height:250px"></h1>
+  <h2><input position="right" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></h2>
+</div>
+
+<div class="topnav">
+  <a href="homepage.html">Homepage</a>
+  <a href="SportType.html">Sport Type</a>
+  <a href="destination.html">Destination</a>
+  <a href="faq.html">FAQs</a>
+  <a href="contactUs.html">Contact Us</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/1.1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/1.2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/1.3.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="article">
+  <img src="images/cave1.png" width="1200px" height="300px">
+  <h1 style="color: white">Gua Tempurung</h1>
+  <p>
+    <strong>Location:</strong> Gopeng, Perak.<br>
+    <strong>How to get there:</strong> Located in Gopeng, about 24km south of the capital city of Ipoh in Perak.<br>
+    <strong>Entrance fee:</strong> Ranges from RM6 to RM9 per person, depending on the package chosen.<br>
+    <strong>Attractions:</strong> About 3km long, it is one of the longest caves in Peninsula Malaysia. Part of it has been developed<br>
+     as a show cave with electric lighting and walkways and there is a range of tours of different lengths and difficulty. A fine river<br>
+     cave, the river passage runs about 1.6km through the hill.<br>
+     <br>
+     <br>
+     There are three very large chambers and some spectacular stalactites and stalagmites, each comprises of five huge domes with ceilings<br>
+     resembling coconut shells. Each of these domes has different calcium formations and marble there exists in differing temperatures and water levels.<br>
+     <strong>Website:</strong><a href="https://riverbug.asia/"> rivebug.asia</a>
+   </p>
+
+  <img src="images/cave3.png" width="1200px" height="300px">
+  <h1 style="color: white">Gua Mulu</h1>
+  <p>
+    <strong>Location:</strong> Gunung Mulu National Park, Sarawak.<br>
+    <strong>Entrance fee:</strong> RM20 per person.<br>
+    <strong>How to get there:</strong> Gunung Mulu National Park is only accessible by flight (Check out ​Air Asia coupons<br>
+    for cheaper flights and discounts), more details about the park can be found here. Upon reaching, you'll also need to<br>
+    take a long boat to reach the cave.<br>
+    <strong>Attractions:</strong> Clearwater Cave is believed to be the largest interconnected cave system in the world by<br>
+    volume and the 8th longest cave in the world at 207 km. Clearwater is a fascinating cave to scroll around. Plank walks,<br>
+    paths and small floating bridges make this an easy and enjoyable experience for the whole family. There are also<br>
+    excellent photo opportunities for those who have the patience for cave photography.<br>
+    <strong>Website:</strong><a href="https://adventoro.com/"> adventoro.com</a>
+    </p>
+
+  <img src="images/cave4.png" width="1200px" height="300px">
+  <h1 style="color: white">Niah Cave</h1>
+  <p>
+    <strong>Location:</strong> Miri, Sarawak.<br>
+    <strong>How to get there:</strong> Gua Niah is approximately 1 hour and 30 minutes from Miri city, by car. There are adequate signages that will lead you to the cave.<br>
+    <strong>Entrance fee:</strong> RM10 per person.<br>
+    <strong>Attractions:</strong> Divided into two sections - The Great Cave and The Painted Cave - both were home to the pre-historic humans and there is nothing better than<br>
+     threading the caverns and chambers here as you see what it was like to live in a subterranean!<br>
+     <strong>Website:</strong><a href="https://sarawaktourism.com/attraction/niah-national-park-miri/"> sarawaktourism.com</a>
+  </p>
+</div>
+
+<div class="footer">
+  <p style="color: #D197E1">If you have any further inqueries, feel free to reach us through these platforms &#128512;
+  <p style="color: #D197E1">Email : extremerabbit_@gmail.com</a><br>
+  Phone number : +60123456789<br>
+  Social media : Facebook/Twitter/Instagram ; @extremerabbit_ </p>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
